@@ -113,15 +113,20 @@ export function SideBar(props: { className?: string }) {
   useHotKey();
 
   return (
+    //   <div
+    //   className={`${styles.sidebar} ${props.className} ${
+    //     shouldNarrow && styles["narrow-sidebar"]
+    //   } ${config.theme === "dark" ? styles.sidebardark : styles.sidebarlight}`}
+    // >
     <div
       className={`${styles.sidebar} ${props.className} ${
         shouldNarrow && styles["narrow-sidebar"]
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+        <div className={styles["sidebar-title"]}>ChatGPT 猪猪侠</div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+          望子成龙小学荣誉学员: GGbond 独家赞助
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
